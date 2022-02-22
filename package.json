@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "arthur.escriou <arthur.escriou@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^3.3.0",
+    "slspress": "^2.2.5",
+    "serverless-offline": "^8.5.0"
+  }
 }
