@@ -9,5 +9,9 @@
     "serverless": "^3.3.0",
     "slspress": "^2.2.5",
     "serverless-offline": "^8.5.0"
+  },
+  "scrips": {
+    "start": "serverless offline",
+    "deploy": "serverless deploy"
   }
 }
