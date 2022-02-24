@@ -4,13 +4,15 @@
   "main": "index.js",
   "author": "arthur.escriou <arthur.escriou@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  },
   "devDependencies": {
     "serverless": "^3.3.0",
-    "slspress": "^2.2.5",
-    "serverless-offline": "^8.5.0"
+    "serverless-offline": "^8.5.0",
+    "slspress": "^2.2.5"
   },
-  "scrips": {
+  "scripts": {
     "start": "serverless offline",
     "deploy": "serverless deploy"
   }

@@ -11,6 +11,12 @@ provider:
     cors: true
 
 functions:
+  login:
+    handler: jwt.login
+    events:
+      - httpApi:
+          path: /login
+          method: post
   crudId:
     handler: handler.crud
     events:

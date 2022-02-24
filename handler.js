@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk')
+const { verify } = require('./jwt')
 
 AWS.config.update({
   region: 'us-west-1',
@@ -46,6 +47,11 @@ const deleteItem = (table, id) =>
 const list = (table) => docClient.scan({ TableName: table }).promise()
 
 module.exports.crud = async (event) => {
+  try {
+    verify(event.headers.Authorizations)
+  } catch (e) {
+    return { statusCode: 403, body: 'unauthorized' }
+  }
   const { method: httpMethod } = event.requestContext.http
   const { entity, method, id } = event.pathParameters
   const { TableNames } = await listTables()
