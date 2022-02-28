@@ -48,7 +48,7 @@ const list = (table) => docClient.scan({ TableName: table }).promise()
 
 module.exports.crud = async (event) => {
   try {
-    verify(event.headers.Authorizations)
+    //verify(event.headers.Authorizations)
   } catch (e) {
     return { statusCode: 403, body: 'unauthorized' }
   }

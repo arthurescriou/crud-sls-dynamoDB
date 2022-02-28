@@ -27,7 +27,7 @@ functions:
     handler: handler.crud
     events:
       - httpApi:
-          path: /{entity}/{method}
+          path: /list/{entity}
           method: any
 # you can add CloudFormation resource templates here
 #resources:
