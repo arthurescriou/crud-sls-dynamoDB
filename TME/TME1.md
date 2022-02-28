@@ -1,6 +1,6 @@
 ADO21DBO
 
-<img src="https://cfa-insta.fr/wp-content/uploads/2020/08/Logo-CFAINSTA.png" alt="drawing" width="100"/>
+<img src="https://cfa-insta.fr/wp-content/uploads/2020/08/Logo-CFAINSTA.png" alt="logo CFA" width="100"/>
 
 # TME 1 Backend Serverless
 
