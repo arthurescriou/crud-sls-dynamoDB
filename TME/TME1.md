@@ -1,4 +1,4 @@
-ADO21DBO
+Dev4DBO
 
 <img src="https://cfa-insta.fr/wp-content/uploads/2020/08/Logo-CFAINSTA.png" alt="logo CFA" width="100"/>
 
@@ -36,7 +36,7 @@ Objectif: créer une entité et utiliser le crud.
 
 ## Exercice 2 : Sécurité et JWT
 
-On chercher maintenant à ajouter de la sécurité sur notre API.
+On va chercher maintenant à ajouter de la sécurité sur notre API.
 
 On va utiliser des JSON Web Token (JWT) pour ça.
 
@@ -67,24 +67,24 @@ Il faudra également modifier `verifyLoginPassword`.
 
 Le JWT permet de stocker des informations, elles ne sont pas modifiable.
 
-Hors dans le protocole JWT, on peut créer un JWT seulement avec la clé privé.
+Or dans le protocole JWT, on peut créer un JWT seulement avec la clé privé.
 Donc seulement notre serveur peut créer des JWT et valider qui sera administrateur ou pas.
 
-On veut maintenant ajouter l'information d'administrateur dans la table user et ajouter également l'information dans le génération du JWT. (`generateToken`)
+On veut maintenant ajouter l'information d'administrateur dans la table user et ajouter également l'information dans la génération du JWT. (`generateToken`)
 
-Il faudra également créer la route `grantAdmin` qui permettra de donner les droits administrateur à un utilisateur. (Attention seulement un administrateur à le droit de faire ça, il faudra donc créer un premier utilisateur par défaut)
+Il faudra également créer la route `grantAdmin` qui permettra de donner les droits administrateur à un utilisateur. (Attention seulement un administrateur a le droit de faire ça, il faudra donc créer un premier utilisateur par défaut)
 
-## Exercice 5 : Information personnel
+## Exercice 5 : Information personnelle
 
-On chercher maintenant à restreindre les accès de certaines tables pour chaque utilisateur.
+On va chercher maintenant à restreindre les accès de certaines tables pour chaque utilisateur.
 
 On veut que nos utilisateurs n'aient accès que aux entités qu'ils ont créé.
 Pour ça il faut donc ajouter l'information de propriétés dans nos entités.
 
 Il faudra également modifier les autres méthodes qui accèdent à des entités (get, list, update, delete).
 
-Par exemple lorsqu'on liste des entités on veut lister seulement celle créé par l'utilisateurs.
+Par exemple lorsqu'on liste des entités on veut lister seulement celles crées par l'utilisateurs.
 
-Pour identifier notre utilisateur il suffit de récupérer l'information dans le token JWT. (et de stocker ce dont on à besoin quand on le génère)
+Pour identifier notre utilisateur il suffit de récupérer l'information dans le token JWT. (et de stocker ce dont on a besoin quand on le génère)
 
 Bonus : les administrateurs eux ont le droit d'accéder à toutes les informations de la base de données.
