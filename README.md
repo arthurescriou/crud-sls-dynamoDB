@@ -12,7 +12,7 @@
 Launch dynamoDB
 
 ```
-docker run -d -p 8000:8000 amazon/dynamodb-local -d
+docker run -d -p 8000:8000 amazon/dynamodb-local
 ```
 
 Run serverless in local
