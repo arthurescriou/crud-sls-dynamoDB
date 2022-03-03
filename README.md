@@ -21,6 +21,23 @@ Run serverless in local
 serverless offline
 ```
 
+## Need AWS credentials
+
+If you do not have aws CLI installed and configured you can juste create an emply config file.
+
+```
+//create a file
+~/.aws/credentials
+```
+
+Fill it with
+
+```
+[default]
+aws_access_key_id=''
+aws_secret_access_key=''
+```
+
 ## Paths
 
 ### Entity
