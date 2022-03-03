@@ -25,8 +25,6 @@ serverless offline
 
 ### Entity
 
-### Entity
-
 #### CRUD
 
 ```
