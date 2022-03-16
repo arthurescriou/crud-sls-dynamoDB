@@ -29,7 +29,7 @@ serverless deploy
 
 On veut vérifier que notre application fonctionne toujours de la même façon qu'en local.
 
-Créer une entité et tester les différentes routes d'API créé.
+Créer une entité et tester les différentes routes d'API créés.
 
 (Si le déploiement est vert cela ne veut pas dire que tout marche)
 
@@ -48,11 +48,11 @@ Objectifs :
 
 ## Exercice 4 : Déploiement d'un front end sur un CDN
 
-Pour compléter le déploiement d'une application compète on veut maintenant déployer la partie client de notre application.
+Pour compléter le déploiement d'une application complète on veut maintenant déployer la partie client de notre application.
 
 Pour déployer des fichiers statiques html, css et js le plus adapté et d'utiliser un CDN (content delivery network).
 
-Ce sont des serveurs spécialisé dans la diffusion et le cache de fichiers statiques.
+Ce sont des serveurs spécialisés dans la diffusion et le cache de fichiers statiques.
 
 Pour déployer notre app nous allons utiliser le service Amplify.
 
