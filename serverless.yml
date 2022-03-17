@@ -9,6 +9,13 @@ provider:
   region: eu-west-1
   httpApi:
     cors: true
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:*
+          Resource: '*'
 
 functions:
   login:

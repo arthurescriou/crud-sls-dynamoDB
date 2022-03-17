@@ -3,7 +3,6 @@ const { verify } = require('./jwt')
 
 AWS.config.update({
   region: 'us-west-1',
-  endpoint: 'http://localhost:8000',
 })
 
 const dynamodb = new AWS.DynamoDB()
