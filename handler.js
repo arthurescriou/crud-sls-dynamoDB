@@ -2,7 +2,7 @@ const AWS = require('aws-sdk')
 const { verify } = require('./jwt')
 
 AWS.config.update({
-  region: 'us-west-1',
+  region: 'eu-west-1',
 })
 
 const dynamodb = new AWS.DynamoDB()
