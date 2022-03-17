@@ -21,6 +21,8 @@ ou remplir le fichier .aws/credentials
 
 Puis déployer le projet :
 
+(pensez à modifier le nom du projet dans le serverless.yml (service) pour identifier le votre)
+
 ```
 serverless deploy
 ```
